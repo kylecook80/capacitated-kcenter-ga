@@ -1,0 +1,1667 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"crossover",
+				"crossover_mutation_time"
+			],
+			[
+				"fitness",
+				"fitness_time"
+			],
+			[
+				"fitnes",
+				"fitness_all"
+			],
+			[
+				"ini",
+				"initial_population"
+			],
+			[
+				"gener",
+				"generational_run"
+			],
+			[
+				"edge_distance",
+				"edge_distances_sum"
+			],
+			[
+				"average",
+				"average_edge_per_center"
+			],
+			[
+				"for",
+				"fori	Range Comprehension (inclusive)"
+			],
+			[
+				"get_",
+				"get_random_int"
+			],
+			[
+				"num",
+				"num_centers"
+			],
+			[
+				"remove",
+				"remove_two_max"
+			],
+			[
+				"total_",
+				"total_percentage"
+			],
+			[
+				"total",
+				"total_fitness"
+			],
+			[
+				"sorted",
+				"sorted_distances"
+			],
+			[
+				"second_slice",
+				"second_slice2"
+			],
+			[
+				"second",
+				"second_slice1"
+			],
+			[
+				"distance",
+				"distance_sum"
+			],
+			[
+				"componen",
+				"components_for_export"
+			],
+			[
+				"com",
+				"component_count"
+			],
+			[
+				"clear",
+				"clear-filter"
+			],
+			[
+				"fee_",
+				"fee_category"
+			],
+			[
+				"fee_category",
+				"fee_category_number"
+			],
+			[
+				"fee",
+				"fee_category"
+			],
+			[
+				"fee_cate",
+				"fee_category_number"
+			],
+			[
+				"update",
+				"update_fixed"
+			],
+			[
+				"envi",
+				"environments"
+			],
+			[
+				"codemirror-",
+				"codemirror-content"
+			],
+			[
+				"environment",
+				"environment_id"
+			],
+			[
+				"env",
+				"environment_id"
+			],
+			[
+				"ignore",
+				"ignore_disabled_buttons"
+			],
+			[
+				"curr",
+				"current_user"
+			],
+			[
+				"gpm_",
+				"gpm_26_pound"
+			],
+			[
+				"tab",
+				"tab_name"
+			],
+			[
+				"status",
+				"status_hash"
+			],
+			[
+				"render",
+				"render_content"
+			],
+			[
+				"working",
+				"working_interest"
+			],
+			[
+				"product",
+				"production_date"
+			],
+			[
+				"adm",
+				"administrator"
+			],
+			[
+				"remo",
+				"remote_file"
+			],
+			[
+				"local",
+				"local_file"
+			],
+			[
+				"journal",
+				"journal_components"
+			],
+			[
+				"busin",
+				"business_associate_type"
+			],
+			[
+				"belo",
+				"belongs_to_options"
+			],
+			[
+				"upda",
+				"update_attributes"
+			],
+			[
+				"group",
+				"group_quantity_sql"
+			],
+			[
+				"con",
+				"connect_to_github"
+			],
+			[
+				"connected",
+				"connected_to_github"
+			],
+			[
+				"assign",
+				"assign_reviewer"
+			],
+			[
+				"git",
+				"github_repo"
+			],
+			[
+				"should",
+				"should_receive"
+			],
+			[
+				"shoul",
+				"should_receive"
+			],
+			[
+				"crete",
+				"create_pull_request"
+			],
+			[
+				"create",
+				"create_pull_request"
+			],
+			[
+				"pull",
+				"pull_requests"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"ppnList",
+				"ppnListCount"
+			],
+			[
+				"new",
+				"newUserProcess"
+			],
+			[
+				"readVirtu",
+				"readVirtualMemory"
+			],
+			[
+				"read",
+				"readVirtualMemoryString"
+			],
+			[
+				"final",
+				"finalPageCount"
+			],
+			[
+				"getNum",
+				"getNumPhysPages"
+			],
+			[
+				"Trans",
+				"TranslationEntry"
+			],
+			[
+				"readVi",
+				"readVirtualMemory"
+			],
+			[
+				"worker",
+				"workerBoat"
+			],
+			[
+				"return",
+				"returnLocation"
+			],
+			[
+				"children",
+				"childrenBoat"
+			],
+			[
+				"boat",
+				"childrenBoat"
+			],
+			[
+				"molokai",
+				"molokaiChildren"
+			],
+			[
+				"molo",
+				"molokaiChildren"
+			],
+			[
+				"Adult",
+				"AdultItinerary"
+			],
+			[
+				"oahu",
+				"oahuChildren"
+			],
+			[
+				"Adul",
+				"AdultItinerary"
+			],
+			[
+				"get",
+				"getPriority"
+			],
+			[
+				"transfe",
+				"transferPriority"
+			],
+			[
+				"readVirtual",
+				"readVirtualMemoryString"
+			],
+			[
+				"ChildRow",
+				"ChildRowToMolokai"
+			],
+			[
+				"oaHu",
+				"oahuAdults"
+			],
+			[
+				"transf",
+				"transferPriority"
+			],
+			[
+				"schedul",
+				"schedulingState"
+			],
+			[
+				"max",
+				"maxPriorityThreadState"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "assets/javascripts/visualize.coffee",
+			"settings":
+			{
+				"buffer_size": 707,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/server.coffee",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gendata.coffee",
+			"settings":
+			{
+				"buffer_size": 719,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/helpers.coffee",
+			"settings":
+			{
+				"buffer_size": 433,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 115.0,
+		"selected_items":
+		[
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"coffeescript",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"pause",
+				"Spotify: Pause"
+			],
+			[
+				"play",
+				"Spotify: Play"
+			],
+			[
+				"search",
+				"Spotify: Search"
+			],
+			[
+				"spotify",
+				"Spotify: Search"
+			],
+			[
+				"set coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"package control",
+				"Package Control: Discover Packages"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"git blame",
+				"Git: Blame"
+			],
+			[
+				"can ",
+				"Can I Switch To Sublime Text 3?"
+			],
+			[
+				"git",
+				"Git: Log"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"gitstatus",
+				"Git: Status"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"html pre",
+				"HTMLPrettify"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"prettify",
+				"HTMLPrettify"
+			],
+			[
+				"ruby haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"checkout",
+				"Git: Checkout New Branch"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"set bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"set coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"synta ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"guard",
+				"Guard: Start Guard"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"set html rail",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"set haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"set guard",
+				"Set Syntax: GuardOutput"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git blam",
+				"Git: Blame"
+			],
+			[
+				"coffee",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"",
+				"Align Tabular"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show Error List"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 269.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kyle/dev/ga/data/non-trivial.json",
+		"/Users/kyle/dev/ga/src/gendata.js",
+		"/Users/kyle/dev/ga/src/ga.coffee",
+		"/Users/kyle/dev/ga/src/capacitated_k_center.coffee",
+		"/Users/kyle/dev/ga/boot.js",
+		"/Users/kyle/dev/ga/src/server.coffee",
+		"/Users/kyle/dev/ga/src/visualization/visualize.coffee",
+		"/Users/kyle/dev/ga/src/visualization/display.jade",
+		"/Users/kyle/dev/ga/data/trivial.json",
+		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/User/SublimeGrunt.sublime-settings",
+		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/Grunt/SublimeGrunt.sublime-settings",
+		"/Users/kyle/dev/ga/display.jade",
+		"/Users/kyle/dev/ga/gendata.js",
+		"/Users/kyle/dev/ga/helpers.js",
+		"/Users/kyle/dev/ga/non-trivial.json",
+		"/Users/kyle/dev/ga/trivial.json",
+		"/Users/kyle/dev/ga/Gruntfile.coffee",
+		"/Users/kyle/dev/ga/visualize.coffee",
+		"/Users/kyle/dev/ga/package.json",
+		"/Users/kyle/dev/ga/compiled/visualize.js",
+		"/Users/kyle/dev/ga/visualize.js",
+		"/Users/kyle/dev/ga/ga.coffee",
+		"/Users/kyle/dev/ga/display.html",
+		"/Users/kyle/dev/ga/gendata.coffee",
+		"/Applications/Sublime Text 2.app/Contents/Info.plist",
+		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/kyle/dev/ga/ga.sublime-project",
+		"/Users/kyle/dev/revenue_accounting/app/views/formulas/_variables.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/views/meters/_allocations.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/contract_allocations/contract_allocation.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/table_helper.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/meters/contract_allocations.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/contract_allocation.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/dsl/field.rb",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/dsl/column.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/contract_allocations/new.html.haml",
+		"/Users/kyle/dev/revenue_accounting/sftp-config.json",
+		"/Users/kyle/dev/revenue_accounting/config/unicorn.rb",
+		"/Users/kyle/.ssh/config",
+		"/Users/kyle/dev/revenue_accounting/.ruby-version",
+		"/Users/kyle/dev/revenue_accounting/lib/filterable.rb",
+		"/Users/kyle/dev/revenue_accounting/app/concerns/export_format.rb",
+		"/Users/kyle/dev/revenue_accounting/lib/analysis_query.rb",
+		"/Users/kyle/dev/revenue_accounting/app/models/analysis.rb",
+		"/Users/kyle/dev/revenue_accounting/app/models/asset.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/meters_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/gas_analyses.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/views/analyses/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/models/analysis_component.rb",
+		"/Users/kyle/dev/revenue_accounting/app/models/meter.rb",
+		"/Users/kyle/dev/revenue_accounting/app/models/component_order.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/analyses_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/lib/redis/redis_export.rb",
+		"/Users/kyle/dev/revenue_accounting/app/models/component.rb",
+		"/Users/kyle/dev/revenue_accounting/lib/lean_query.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/allocated_results_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/meters/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/meters.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/views/analyses/leveled.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/leveled_gas_analyses.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/views/analyses/_table.html.erb",
+		"/Users/kyle/dev/revenue_accounting/app/models/company.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/accounting_results_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/allocated_results.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/.git/MERGE_MSG",
+		"/Users/kyle/dev/revenue_accounting/db/migrate/20140321153944_add_company_to_component_orders.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/analyses/edit.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/views/shared/_full_table.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/render_table.js",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/dsl/helper.rb",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/dsl/table.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/analyses/_items.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/views/dsl/_table.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/views/shared/_row.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/stylesheets/sort_list.scss",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/sort_list.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/component_orders_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/stylesheets/alerts.scss",
+		"/Users/kyle/.zshrc",
+		"/Users/kyle/dev/revenue_accounting/config/routes.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/component_orders/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/stylesheets/application.css",
+		"/Users/kyle/dev/revenue_accounting/db/migrate/20140319185852_add_default_to_position_column_in_component_orders.rb",
+		"/tmp/subl stdin sHEcD1.txt",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/components_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/lib/table_update.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/meters/list_allocations.html.haml",
+		"/Users/kyle/dev/revenue_accounting/db/migrate/20140319200745_convert_components_to_component_orders.rb",
+		"/Users/kyle/dev/revenue_accounting/db/schema.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/marketing/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/contract_allocations/alerts.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/lib/code_table_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/marketing.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/shiny_helper.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/stylesheets/bootstrap.css",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/analyses_table.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/deals_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/marketing/proxy/marketing_proxy.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/db/migrate/20140304221033_add_fields_to_component_orders.rb",
+		"/Users/kyle/dev/revenue_accounting/Gemfile",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/sort_list.js",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/rate_imbalances_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/rate_imbalances/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/concerns/code_table.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/component_order/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/products_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/components_order/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/models/product.rb",
+		"/Users/kyle/dev/revenue_accounting/config/initializers/inflections.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/rates_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/products/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/code_tables_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/config/deploy.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/update_tables.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/views/accounting_dates/index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/views/shared/_lists.js.erb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/fixed_allocation_roots_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/accounting_date.js.coffee",
+		"/Users/kyle/dev/revenue_accounting/app/helpers/dsl/index.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/dsl/_index.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/views/assets/graph.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/concerns/acts_as_versioned.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/application_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/assets_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/controllers/company_codes_controller.rb",
+		"/Users/kyle/dev/revenue_accounting/app/views/decline_curves/edit.html.haml",
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/global.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"*",
+			"",
+			"*.rb",
+			"",
+			"*.s*",
+			"*.sass",
+			"*.scss",
+			"*.css",
+			"/Users/kyle/dev/revenue_accounting/**/*.css",
+			"/Users/kyle/dev/revenue_accounting/*.css",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/valuation",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/revenue_accounting/app",
+			"/Users/kyle/dev/revenue_accounting/app/views/contracts",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/mission_control",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/valuation",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/valuation",
+			"/Users/kyle/dev/revenue_accounting,-*.js,-*.coffee,-*.log",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/valuation",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/revenue_accounting,-*.js,-*.coffee,-*.log",
+			"/Users/kyle/dev/revenue_accounting",
+			"/Users/kyle/dev/valuation/workers",
+			"/Users/kyle/dev/valuation",
+			"/Users/kyle/dev/valuation/,-*.js,-*.coffee",
+			"/Users/kyle/dev/revenue_accounting/,-*.js,-*.coffee",
+			"/Users/kyle/dev/revenue_accounting/",
+			"/Users/kyle/dev/revenue_accounting/app/views/contracts",
+			"",
+			"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/main",
+			"",
+			"/Users/kyle/dev/revenue_accounting/app/assets",
+			"/Users/kyle/dev/revenue_accounting/app/javascript",
+			"/Users/kyle/dev/revenue_accounting/app/controllers",
+			"<project>/app/controllers",
+			"<project>",
+			"",
+			"/Users/kyle/dev/valuation/test",
+			"/Users/kyle/dev/valuation",
+			"",
+			"*",
+			"",
+			"*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"1",
+			"get_random_int",
+			"_.contains",
+			"_.extend",
+			"fitness",
+			"check_",
+			"max",
+			"min",
+			"_.",
+			"max",
+			"min",
+			"get_random_int",
+			"chance",
+			"],[",
+			"ga.generational_run()\n",
+			"children",
+			"chromosome",
+			"Chromosome",
+			"gene",
+			"Gene",
+			"gene",
+			"Gene",
+			"gene",
+			"Gene",
+			"gene",
+			"Gene",
+			"gene",
+			"Gene",
+			"gene",
+			"Gene",
+			"a[0]",
+			"a",
+			"max_distances",
+			"Pa",
+			"Path",
+			"]",
+			"@data[",
+			"_.",
+			"num_centers",
+			"rank",
+			"10",
+			"new_population[selected[idx]]",
+			"],[",
+			",",
+			"gene[rand]",
+			")",
+			"(",
+			"css",
+			"def render_table",
+			"User wti",
+			"components_for_export",
+			"offset_and_limit",
+			"@key",
+			"columns",
+			"@joins",
+			"joins",
+			"level_meter",
+			"component_json",
+			"component",
+			"respond_with_filtered",
+			"render_with_filter",
+			"respond_with_filtered",
+			"picker_scope",
+			"def cond!",
+			"respond_with_filtered",
+			"respond_with_filtered include",
+			"respond_with_filtered ids",
+			"new ColumnPicker",
+			"asset",
+			"def sortable?",
+			"class",
+			"def render_table",
+			"@analysis",
+			"sortable",
+			"self",
+			"alerts",
+			"stylesheet_link_tag",
+			"stylesheet_link_tag 'alerts'",
+			"stylesheet_link_tag",
+			"stylesheet_link_tag 'alerts'",
+			"stylesheet_link_tag \"alerts\"",
+			"require_css",
+			"notice",
+			"=~",
+			"/=~.+/",
+			"/.+/",
+			"position",
+			"mol_for",
+			"component",
+			"components",
+			"span",
+			"button",
+			"a",
+			"button",
+			"button-clear",
+			"button",
+			"$(e.currentTarget)",
+			"clear",
+			"render_table",
+			"display_picker",
+			"def effective",
+			"graph",
+			"- @below = html.render",
+			"Searching",
+			"- @below = render",
+			"helpful_serialize",
+			"collect_table_params",
+			"check_duplicate",
+			"find_by_number_or_name",
+			"find_by_name_or_number",
+			"find_by_name",
+			"Time.zone =",
+			"timeliness/core_ext",
+			"def to_date",
+			"time",
+			"config = Settings",
+			"Settings",
+			"config",
+			"with_anchor",
+			"contract",
+			"def as_of",
+			"as_of",
+			"parse_time_select",
+			"Contract is unchanged",
+			"form_actions_for",
+			"validate_form_for",
+			"code_table",
+			"#title-stuff"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@exemplar",
+			"LinkedList"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assets/javascripts/visualize.coffee",
+					"settings":
+					{
+						"buffer_size": 707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								707,
+								707
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/server.coffee",
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/gendata.coffee",
+					"settings":
+					{
+						"buffer_size": 719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								684,
+								684
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/helpers.coffee",
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 120.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 120.0
+	},
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.git":
+	{
+		"height": 102.0
+	},
+	"output.git-checkout":
+	{
+		"height": 120.0
+	},
+	"output.git-commit":
+	{
+		"height": 120.0
+	},
+	"output.guard":
+	{
+		"height": 222.0
+	},
+	"output.sftp":
+	{
+		"height": 227.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 210.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_variables",
+				"revenue_accounting/app/views/formulas/_variables.html.haml"
+			],
+			[
+				"column.rb",
+				"revenue_accounting/app/helpers/dsl/column.rb"
+			],
+			[
+				"field.rb",
+				"revenue_accounting/app/helpers/dsl/field.rb"
+			],
+			[
+				"contractallocationjs",
+				"revenue_accounting/app/assets/javascripts/contract_allocations/contract_allocation.js.coffee"
+			],
+			[
+				"filterable",
+				"revenue_accounting/lib/filterable.rb"
+			],
+			[
+				"export",
+				"revenue_accounting/lib/redis/redis_export.rb"
+			],
+			[
+				"expo",
+				"revenue_accounting/app/concerns/export_format.rb"
+			],
+			[
+				"analysiscomponent",
+				"revenue_accounting/app/models/analysis_component.rb"
+			],
+			[
+				"analysisquery",
+				"revenue_accounting/lib/analysis_query.rb"
+			],
+			[
+				"meter.",
+				"revenue_accounting/app/models/meter.rb"
+			],
+			[
+				"asset",
+				"revenue_accounting/app/models/asset.rb"
+			],
+			[
+				"meter.rb",
+				"revenue_accounting/app/models/meter.rb"
+			],
+			[
+				"analysicomp",
+				"revenue_accounting/app/models/analysis_component.rb"
+			],
+			[
+				"component.rb",
+				"revenue_accounting/app/models/component.rb"
+			],
+			[
+				"componentor",
+				"revenue_accounting/app/models/component_order.rb"
+			],
+			[
+				"metercontroller",
+				"revenue_accounting/app/controllers/meters_controller.rb"
+			],
+			[
+				"analysis.rb",
+				"revenue_accounting/app/models/analysis.rb"
+			],
+			[
+				"asset.rb",
+				"revenue_accounting/app/models/asset.rb"
+			],
+			[
+				"meters.js",
+				"revenue_accounting/app/assets/javascripts/meters.js.coffee"
+			],
+			[
+				"viewsmeterindex",
+				"revenue_accounting/app/views/meters/index.html.haml"
+			],
+			[
+				"component",
+				"revenue_accounting/app/models/component.rb"
+			],
+			[
+				"migrate2014addcompanytocom",
+				"revenue_accounting/db/migrate/20140321153944_add_company_to_component_orders.rb"
+			],
+			[
+				"company",
+				"revenue_accounting/app/models/company.rb"
+			],
+			[
+				"componento",
+				"revenue_accounting/app/models/component_order.rb"
+			],
+			[
+				"analysis",
+				"revenue_accounting/app/models/analysis.rb"
+			],
+			[
+				"analysescontro",
+				"revenue_accounting/app/controllers/analyses_controller.rb"
+			],
+			[
+				"dslhelper",
+				"revenue_accounting/app/helpers/dsl/helper.rb"
+			],
+			[
+				"dsltablerb",
+				"revenue_accounting/app/helpers/dsl/table.rb"
+			],
+			[
+				"rendertablejs",
+				"revenue_accounting/app/assets/javascripts/render_table.js"
+			],
+			[
+				"dslcolumn",
+				"revenue_accounting/app/helpers/dsl/column.rb"
+			],
+			[
+				"_table.html.erb",
+				"revenue_accounting/app/views/analyses/_table.html.erb"
+			],
+			[
+				"sortlistscss",
+				"revenue_accounting/app/assets/stylesheets/sort_list.scss"
+			],
+			[
+				"alertscss",
+				"revenue_accounting/app/assets/stylesheets/alerts.scss"
+			],
+			[
+				"sort_listjs",
+				"revenue_accounting/app/assets/javascripts/sort_list.js.coffee"
+			],
+			[
+				"componentordercontrol",
+				"revenue_accounting/app/controllers/component_orders_controller.rb"
+			],
+			[
+				"migrate20140319185",
+				"revenue_accounting/db/migrate/20140319185852_add_default_to_position_column_in_component_orders.rb"
+			],
+			[
+				"routes.rb",
+				"revenue_accounting/config/routes.rb"
+			],
+			[
+				"application.css",
+				"revenue_accounting/app/assets/stylesheets/application.css"
+			],
+			[
+				"analycontrol",
+				"revenue_accounting/app/controllers/analyses_controller.rb"
+			],
+			[
+				"level",
+				"revenue_accounting/app/assets/javascripts/leveled_gas_analyses.js.coffee"
+			],
+			[
+				"codetablecotr",
+				"revenue_accounting/lib/code_table_controller.rb"
+			],
+			[
+				"componentcontr",
+				"revenue_accounting/app/controllers/components_controller.rb"
+			],
+			[
+				"tableupdate",
+				"revenue_accounting/lib/table_update.rb"
+			],
+			[
+				"codetablecontroller",
+				"revenue_accounting/lib/code_table_controller.rb"
+			],
+			[
+				"componentcontroll",
+				"revenue_accounting/app/controllers/components_controller.rb"
+			],
+			[
+				"schema",
+				"revenue_accounting/db/schema.rb"
+			],
+			[
+				"convertcomponentstocomponen",
+				"revenue_accounting/db/migrate/20140319200745_convert_components_to_component_orders.rb"
+			],
+			[
+				"migrate201403adddefault",
+				"revenue_accounting/db/migrate/20140319185852_add_default_to_position_column_in_component_orders.rb"
+			],
+			[
+				"listal",
+				"revenue_accounting/app/views/meters/list_allocations.html.haml"
+			],
+			[
+				"alerts.js",
+				"revenue_accounting/app/assets/javascripts/contract_allocations/alerts.js.coffee"
+			],
+			[
+				"marketnindex",
+				"revenue_accounting/app/views/marketing/index.html.haml"
+			],
+			[
+				"marketing.js",
+				"revenue_accounting/app/assets/javascripts/marketing.js.coffee"
+			],
+			[
+				"alerts.",
+				"revenue_accounting/app/assets/stylesheets/alerts.scss"
+			],
+			[
+				"exportformat.rb",
+				"revenue_accounting/app/concerns/export_format.rb"
+			],
+			[
+				"dealcontro",
+				"revenue_accounting/app/controllers/deals_controller.rb"
+			],
+			[
+				"marketing.js.coff",
+				"revenue_accounting/app/assets/javascripts/marketing.js.coffee"
+			],
+			[
+				"marketingproxy",
+				"revenue_accounting/app/assets/javascripts/marketing/proxy/marketing_proxy.js.coffee"
+			],
+			[
+				"meter",
+				"revenue_accounting/app/models/meter.rb"
+			],
+			[
+				"viewsanalyses",
+				"revenue_accounting/app/views/analyses/_table.html.erb"
+			],
+			[
+				"gemfile",
+				"revenue_accounting/Gemfile"
+			],
+			[
+				"20140304221033",
+				"revenue_accounting/db/migrate/20140304221033_add_fields_to_component_orders.rb"
+			],
+			[
+				"rateimbalancecontroll",
+				"revenue_accounting/app/controllers/rate_imbalances_controller.rb"
+			],
+			[
+				"rateimbalanceindex",
+				"revenue_accounting/app/views/rate_imbalances/index.html.haml"
+			],
+			[
+				"meterindex",
+				"revenue_accounting/app/views/meters/index.html.haml"
+			],
+			[
+				"componentordersindex",
+				"revenue_accounting/app/views/component_orders/index.html.haml"
+			],
+			[
+				"productcontroll",
+				"revenue_accounting/app/controllers/products_controller.rb"
+			],
+			[
+				"inflections",
+				"revenue_accounting/config/initializers/inflections.rb"
+			],
+			[
+				"shinyhelper",
+				"revenue_accounting/app/helpers/shiny_helper.rb"
+			],
+			[
+				"codetable",
+				"revenue_accounting/app/concerns/code_table.rb"
+			],
+			[
+				"componentorderingmodel",
+				"revenue_accounting/app/models/component_ordering_model.rb"
+			],
+			[
+				"product",
+				"revenue_accounting/app/models/product.rb"
+			],
+			[
+				"ratescontroll",
+				"revenue_accounting/app/controllers/rates_controller.rb"
+			],
+			[
+				"routes",
+				"revenue_accounting/config/routes.rb"
+			],
+			[
+				"componentsorder",
+				"revenue_accounting/app/controllers/components_order_controller.rb"
+			],
+			[
+				"codetablescontroller",
+				"revenue_accounting/app/controllers/code_tables_controller.rb"
+			],
+			[
+				"productscontro",
+				"revenue_accounting/app/controllers/products_controller.rb"
+			],
+			[
+				"dsltable",
+				"revenue_accounting/app/helpers/dsl/table.rb"
+			],
+			[
+				"dslindex",
+				"revenue_accounting/app/helpers/dsl/index.rb"
+			],
+			[
+				"table",
+				"revenue_accounting/lib/table_update.rb"
+			],
+			[
+				"updatetable",
+				"revenue_accounting/app/assets/javascripts/update_tables.js.coffee"
+			],
+			[
+				"views/analyses",
+				"revenue_accounting/app/views/analyses/index.html.haml"
+			],
+			[
+				"gmfile",
+				"revenue_accounting/Gemfile"
+			],
+			[
+				"analysescontroll",
+				"revenue_accounting/app/controllers/analyses_controller.rb"
+			],
+			[
+				"fixedallocationroot",
+				"revenue_accounting/app/controllers/fixed_allocation_roots_controller.rb"
+			],
+			[
+				"accounting_dates/index",
+				"revenue_accounting/app/views/accounting_dates/index.html.haml"
+			],
+			[
+				"actsasver",
+				"revenue_accounting/app/concerns/acts_as_versioned.rb"
+			],
+			[
+				"assetcontroller",
+				"revenue_accounting/app/controllers/assets_controller.rb"
+			],
+			[
+				"routesr",
+				"revenue_accounting/config/routes.rb"
+			],
+			[
+				"companycode",
+				"revenue_accounting/app/controllers/company_codes_controller.rb"
+			],
+			[
+				"declinecurveedit",
+				"revenue_accounting/app/views/decline_curves/edit.html.haml"
+			],
+			[
+				"contractstreamedit",
+				"revenue_accounting/app/views/contract_streams/edit.html.haml"
+			],
+			[
+				"updatetables",
+				"revenue_accounting/app/assets/javascripts/update_tables.js.coffee"
+			],
+			[
+				"formulas/edit",
+				"revenue_accounting/app/views/formulas/edit.html.haml"
+			],
+			[
+				"formula.rb",
+				"revenue_accounting/app/models/formula.rb"
+			],
+			[
+				"formula_controller",
+				"revenue_accounting/app/controllers/formulas_controller.rb"
+			],
+			[
+				"process_schedule",
+				"revenue_accounting/app/models/process_schedule.rb"
+			],
+			[
+				"processschedule",
+				"revenue_accounting/app/controllers/process_schedules_controller.rb"
+			],
+			[
+				"formula/edit",
+				"revenue_accounting/app/views/formulas/edit.html.haml"
+			],
+			[
+				"contractcontroller",
+				"revenue_accounting/app/controllers/contracts_controller.rb"
+			],
+			[
+				"fixedallocation",
+				"revenue_accounting/app/models/fixed_allocation_root.rb"
+			],
+			[
+				"fixedallocationroo",
+				"revenue_accounting/app/controllers/fixed_allocation_roots_controller.rb"
+			],
+			[
+				"sche",
+				"revenue_accounting/db/schema.rb"
+			],
+			[
+				"actsasversioned",
+				"revenue_accounting/app/concerns/acts_as_versioned.rb"
+			],
+			[
+				"actsasv",
+				"revenue_accounting/app/concerns/acts_as_versioned.rb"
+			],
+			[
+				"contract.rb",
+				"revenue_accounting/app/models/contract.rb"
+			],
+			[
+				"versioncontrol",
+				"revenue_accounting/app/controllers/versions_controller.rb"
+			],
+			[
+				"versions",
+				"revenue_accounting/features/step_definitions/versioning_steps.rb"
+			],
+			[
+				"applicationcontroller",
+				"revenue_accounting/app/controllers/application_controller.rb"
+			],
+			[
+				"application.rb",
+				"revenue_accounting/config/application.rb"
+			],
+			[
+				"production",
+				"revenue_accounting/config/environments/production.rb"
+			],
+			[
+				"applicationcontrol",
+				"revenue_accounting/app/controllers/application_controller.rb"
+			],
+			[
+				"contractcontroll",
+				"revenue_accounting/app/controllers/contracts_controller.rb"
+			],
+			[
+				"fieldh",
+				"revenue_accounting/app/helpers/field_helper.rb"
+			],
+			[
+				"views/contrac",
+				"revenue_accounting/app/views/allocated_results/contract.html.haml"
+			],
+			[
+				"role",
+				"revenue_accounting/app/models/role.rb"
+			],
+			[
+				"contract",
+				"revenue_accounting/app/models/contract.rb"
+			],
+			[
+				"environment.rb",
+				"revenue_accounting/config/environment.rb"
+			],
+			[
+				"config/environments",
+				"revenue_accounting/config/environments/development.rb"
+			],
+			[
+				"contractscontroller",
+				"revenue_accounting/app/controllers/contracts_controller.rb"
+			],
+			[
+				"beginn",
+				"revenue_accounting/app/models/ngl_beginning_imbalance.rb"
+			],
+			[
+				"contractim",
+				"revenue_accounting/app/models/contract_imbalance_term.rb"
+			],
+			[
+				"imbalancegrid",
+				"revenue_accounting/app/models/imbalance_term_grid_item.rb"
+			],
+			[
+				"nglimbalance",
+				"revenue_accounting/app/models/ngl_imbalance.rb"
+			],
+			[
+				"nomination",
+				"revenue_accounting/app/models/nomination.rb"
+			],
+			[
+				"alloca",
+				"revenue_accounting/lib/allocation.rb"
+			],
+			[
+				"canupdatehasmany",
+				"revenue_accounting/lib/core_ext/active_record/base/can_update_has_many.rb"
+			],
+			[
+				"canupdate",
+				"revenue_accounting/lib/core_ext/active_record/base/can_update_has_many.rb"
+			],
+			[
+				"canup",
+				"revenue_accounting/lib/can_update_has_many_helper.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 643.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/kyle/dev/wti.sublime-project"
+			]
+		],
+		"width": 1280.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true
+}

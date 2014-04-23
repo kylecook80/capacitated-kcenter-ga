@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title Evolutionary Computation Project
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
+    != css('index')
+    != js('ga')
+    != js('helpers')
+    != js('gendata')
+  body
+    #visualize.row
+      #container.col-md-8
+      #settings.col-md-4
+        .form-group
+          select.form-control#get-filename
+            option(disabled, selected) Choose Nodelist
+            for file in files
+              option(value=file)= file
+          input.form-control#get-generations(placeholder="Generations", value="500")
+          input.form-control#get-population-size(placeholder="Population Size", value="100")
+          input.form-control#get-crossover-rate(placeholder="Crossover Rate", value="0.95")
+          input.form-control#get-mutation-rate(placeholder="Mutation Rate", value="0.05")
+          input.form-control#get-capacity(placeholder="Center Node Capacity")
+          a.btn.btn-default#start-evolve Evolve
+        .form-group
+          input.form-control#gen-filename(placeholder="Name")
+          input.form-control#gen-nodes(placeholder="Nodes Per Center")
+          input.form-control#gen-radius(placeholder="Node Radius")
+          .form-inline
+            input.form-control#input-center(placeholder="x,y")
+            a.btn.btn-default#add-center Add Center
+          a.btn.btn-default#gen-file Generate Data
+        ul#centers-list
+
+    script(src='/jquery/dist/jquery.min.js')
+    script(src='/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/d3/d3.min.js')
+    != js('visualize')
+    != js('index')
