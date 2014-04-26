@@ -1,4 +1,4 @@
-{GA} = require './ga'
+GA = require './ga'
 fs = require 'fs'
 
 data = fs.readFileSync('data/trivial.json').toString()
