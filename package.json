@@ -1,6 +1,11 @@
 {
   "name": "EvoComp_GA",
   "version": "0.0.1",
+  "main": "compiled/index.html",
+  "node-main": "compiled/ga.js",
+  "scripts": {
+    "start": "nodewebkit"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-watch": "~0.6.1",
@@ -9,6 +14,6 @@
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-uglify": "~0.2.2",
-    "grunt-newer": "^0.7.0"
+    "grunt-contrib-stylus": "^0.15.0"
   }
 }

@@ -1,5 +1,9 @@
 helpers = require './helpers'
 
+# Arguments when instantiating:
+# - size: The size of the population.
+# - nodes: The number of nodes in the data set
+# - centers: The number of nodes required to be centers
 class Population
   constructor: (opts) ->
     helpers.extend @, opts
@@ -74,6 +78,14 @@ class Chromosome
         best_idx = idx
     [best, best_idx]
 
+# Arguments required for instantiating:
+# - data: A two dimensional array of (x,y) coordinates, i.e. [[1,1],[2,2],[3,3]...]
+# - population_size: The size of the population we want to use.
+# - generations: How many generations we should run for.
+# - mutation: The chance of mutation. Given as a number between 0 and 1, i.e. 0.05
+# - crossover: The chance of crossover. Given as a number between 0 and 1, i.e. 0.95
+# - centers: The number of centers to attempt to find
+# - capacity: The capacity of a center
 class GA
   constructor: (opts) ->
     helpers.extend @, opts
@@ -111,11 +123,11 @@ class GA
 
     for nc_node_list in node_list
       for candidate in nc_node_list
-        if !helpers.contains(used, candidate[0])
+        if !helpers.contains(used, candidate[0]) && edges_per_center[candidate[1]].length < @capacity
           edges_per_center[candidate[1]].push candidate[0]
           used.push candidate[0]
         else
-          continue
+          continue  
 
     edges_per_center
 
@@ -138,8 +150,10 @@ class GA
 
   selection: (population, pop_fitness=null) ->
     selected = []
+    
     unless pop_fitness
       pop_fitness = @fitness_all population
+
     for i in [0..1]
       first = helpers.get_random_int 0, pop_fitness.length-1
       second = helpers.get_random_int 0, pop_fitness.length-1
@@ -278,11 +292,11 @@ class GA
           selected[idx] = @repair chromosome
     
       for i in [0..1]
-        max = all_fitness.max()
+        max = helpers.max all_fitness
         index = all_fitness.indexOf max
         population[index] = selected[i]
 
-      new_min = all_fitness.min()
+      new_min = helpers.min all_fitness
       
       if new_min < best
         best = new_min

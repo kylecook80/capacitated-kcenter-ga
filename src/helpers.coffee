@@ -17,4 +17,10 @@ Helpers.contains = (array, val) ->
 Helpers.flatten = (array) ->
   array.concat.apply [], array
 
+Helpers.max = (array) ->
+  Math.max.apply(null, array)
+
+Helpers.min = (array) ->
+  Math.min.apply(null, array)
+
 module.exports = Helpers
