@@ -13,8 +13,6 @@
     "nodes": [[4, 4], [4, 5], [5, 4], [3, 4], [4, 3], [4, 10], [4, 11], [5, 10], [3, 10], [4, 9], [10, 4], [10, 5], [11, 4], [9, 4], [10, 3], [10, 10], [10, 11], [11, 10], [9, 10], [10, 9]]
   };
 
-  sessionStorage.setItem("data", JSON.stringify(trivial));
-
   $('#get-filename').on('change', function() {
     var modulus, name;
     name = $('#get-filename').val().split('.')[0];
@@ -69,19 +67,32 @@
   });
 
   $('#start-evolve').on('click', function(e) {
-    var data, k_center;
+    var capacity, center_nodes, centers, crossover_operator, crossover_rate, data, data_set, generations, k_center, lines, mutation_operator, mutation_rate, nodes, population_size, results;
+    data_set = $('#get-data-set').val();
+    crossover_operator = $('#get-crossover-operator').val();
+    mutation_operator = $('#get-mutation-operator').val();
+    generations = parseInt($('#get-generations').val());
+    population_size = parseInt($('#get-population-size').val());
+    crossover_rate = parseFloat($('#get-crossover-rate').val());
+    mutation_rate = parseFloat($('#get-mutation-rate').val());
+    centers = parseInt($('#get-centers').val());
+    capacity = parseInt($('#get-capacity').val());
     $("img.loading").css("display", "inline");
-    data = trivial.nodes;
+    data = non_trivial;
+    nodes = data.nodes;
+    center_nodes = data.centers;
     k_center = new GA({
-      data: data,
-      population_size: 100,
-      generations: 500,
-      mutation: 0.05,
-      crossover: 0.95,
-      centers: 4,
-      capacity: 7
+      data: nodes,
+      population_size: population_size,
+      generations: generations,
+      mutation: mutation_rate,
+      crossover: crossover_rate,
+      centers: centers,
+      capacity: capacity
     });
-    console.log(k_center.generational_run());
+    results = k_center.generational_run();
+    lines = results.lines;
+    generate_graph(nodes, nodes.length / center_nodes.length, lines);
     return $("img.loading").css("display", "none");
   });
 

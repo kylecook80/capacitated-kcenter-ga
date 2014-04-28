@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"expand",
+				"expand_line_object"
+			],
+			[
+				"crossov",
+				"crossover_rate"
+			],
+			[
 				"Si",
 				"SimulatedAnnealing"
 			],
@@ -332,10 +340,42 @@
 	"buffers":
 	[
 		{
+			"file": "views/display.jade",
+			"settings":
+			{
+				"buffer_size": 2314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/ga.coffee",
+			"settings":
+			{
+				"buffer_size": 8999,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.coffee",
+			"settings":
+			{
+				"buffer_size": 1409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/visualize.coffee",
+			"settings":
+			{
+				"buffer_size": 1410,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "assets/js/display.coffee",
 			"settings":
 			{
-				"buffer_size": 3753,
+				"buffer_size": 4088,
 				"line_ending": "Unix"
 			}
 		}
@@ -568,6 +608,7 @@
 	},
 	"file_history":
 	[
+		"/Users/kyle/dev/ga/src/run_ga.coffee",
 		"/Users/kyle/dev/ga/src/helpers.coffee",
 		"/Users/kyle/dev/ga/boot.js",
 		"/Users/kyle/dev/ga/src/sa.coffee",
@@ -694,8 +735,7 @@
 		"/Users/kyle/dev/revenue_accounting/app/views/products/index.html.haml",
 		"/Users/kyle/dev/revenue_accounting/app/controllers/code_tables_controller.rb",
 		"/Users/kyle/dev/revenue_accounting/config/deploy.rb",
-		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/update_tables.js.coffee",
-		"/Users/kyle/dev/revenue_accounting/app/views/accounting_dates/index.html.haml"
+		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/update_tables.js.coffee"
 	],
 	"find":
 	{
@@ -910,23 +950,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/js/display.coffee",
+					"file": "views/display.jade",
 					"settings":
 					{
-						"buffer_size": 3753,
+						"buffer_size": 2314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1758,
-								1958
+								941,
+								941
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 186.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/ga.coffee",
+					"settings":
+					{
+						"buffer_size": 8999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5287,
+								5287
 							]
 						],
 						"settings":
@@ -939,7 +1010,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.y": 2950.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gruntfile.coffee",
+					"settings":
+					{
+						"buffer_size": 1409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								594,
+								594
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/js/visualize.coffee",
+					"settings":
+					{
+						"buffer_size": 1410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1239,
+								1239
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 402.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/js/display.coffee",
+					"settings":
+					{
+						"buffer_size": 4088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3266,
+								3266
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 560.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -1,7 +1,18 @@
+expand_line_object = (data, lines) ->
+  node_array = []
+  for center, array of lines
+    for val in array
+      center_index = parseInt(center)
+      value_index = parseInt(val)
+      center_node = data[center_index]
+      value_node = data[value_index]
+      node_array.push [center_node, value_node]
+  node_array
+
 window.generate_graph = (data, modulus, lines) ->
   w = 600
   h = 400
-  r = 2
+  r = 3
 
   svg = d3.select("#container")
     .append("svg")
@@ -17,8 +28,8 @@ window.generate_graph = (data, modulus, lines) ->
     .range([0+(r+5), h-(r+5)])
 
   lineFunction = d3.svg.line()
-    .x((d) -> d[0])
-    .y((d) -> d[1])
+    .x((d) -> xScale(d[0]))
+    .y((d) -> yScale(d[1]))
     .interpolate("linear");
 
   svg.selectAll("circle")
@@ -37,7 +48,10 @@ window.generate_graph = (data, modulus, lines) ->
     .attr("cy", (d) -> yScale(d[1]))
 
   if lines != null
+    expanded_lines = expand_line_object data, lines
     svg.selectAll("path")
-      .data(lines)
+      .data(expanded_lines)
       .enter()
       .append("path")
+      .attr("d", (array) -> lineFunction(array))
+      .attr("stroke", "black")

@@ -191,7 +191,7 @@ class GA
 
   uniform_cross: (chromosomes) ->
 
-
+  # Flip bit
   mutate: (chromosome) ->
     rand = helpers.get_random_int(0, chromosome.length-1)
     new_chromosome = chromosome.split("").map (val) -> parseInt(val)

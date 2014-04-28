@@ -37,24 +37,33 @@ $(document).on 'click', '.fa-times', (e) ->
   $(e.currentTarget).parent().remove()
 
 $('#start-evolve').on 'click', (e) ->
-  # file = $('#get-filename').val()
-  generations = $('#get-generations').val()
-  population_size = $('#get-population-size').val()
-  crossover_rate = $('#get-crossover-rate').val()
-  mutation_rate = $('#get-mutation-rate').val()
-  capacity = $('#get-capacity').val()
-  
+  data_set = $('#get-data-set').val()
+  crossover_operator = $('#get-crossover-operator').val()
+  mutation_operator = $('#get-mutation-operator').val()
+  generations = parseInt $('#get-generations').val()
+  population_size = parseInt $('#get-population-size').val()
+  crossover_rate = parseFloat $('#get-crossover-rate').val()
+  mutation_rate = parseFloat $('#get-mutation-rate').val()
+  centers = parseInt $('#get-centers').val()
+  capacity = parseInt $('#get-capacity').val()
+
   $("img.loading").css("display", "inline")
-  data = trivial.nodes
+  data = non_trivial
+
+  nodes = data.nodes
+  center_nodes = data.centers
 
   k_center = new GA
-    data: data
-    population_size: 100
-    generations: 500
-    mutation: 0.05
-    crossover: 0.95
-    centers: 4
-    capacity: 7
+    data: nodes
+    population_size: population_size
+    generations: generations
+    mutation: mutation_rate
+    crossover: crossover_rate
+    centers: centers
+    capacity: capacity
 
-  console.log k_center.generational_run()
+  results = k_center.generational_run()
+  lines = results.lines
+  generate_graph nodes, nodes.length/center_nodes.length, lines
+
   $("img.loading").css("display", "none")

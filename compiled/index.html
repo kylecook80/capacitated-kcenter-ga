@@ -12,10 +12,24 @@
       <div id="container" class="col-md-8"></div>
       <div id="settings" class="col-md-4">
         <div class="form-group">
+          <select id="get-data-set" class="form-control">
+            <option selected disabled>Data Set</option>
+            <option value="trivial">Trivial</option>
+            <option value="non_trivial">Non-Trivial</option>
+          </select>
+          <select id="get-crossover-operator" class="form-control">
+            <option selected disabled>Crossover Operator</option>
+            <option value="single_point">Single Point</option>
+          </select>
+          <select id="get-mutation-operator" class="form-control">
+            <option selected disabled>Mutation Operator</option>
+            <option value="random">Random</option>
+          </select>
           <input id="get-generations" placeholder="Generations" value="500" class="form-control">
           <input id="get-population-size" placeholder="Population Size" value="100" class="form-control">
           <input id="get-crossover-rate" placeholder="Crossover Rate" value="0.95" class="form-control">
           <input id="get-mutation-rate" placeholder="Mutation Rate" value="0.05" class="form-control">
+          <input id="get-centers" placeholder="Number of Centers" class="form-control">
           <input id="get-capacity" placeholder="Center Node Capacity" class="form-control"><a id="start-evolve" class="btn btn-default">Evolve</a><img src="ajax-loader.gif" class="loading">
         </div>
         <div class="form-group">

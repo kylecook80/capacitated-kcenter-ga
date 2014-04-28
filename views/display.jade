@@ -11,10 +11,21 @@ html
       #container.col-md-8
       #settings.col-md-4
         .form-group
+          select.form-control#get-data-set
+            option(selected=true, disabled) Data Set
+            option(value="trivial") Trivial
+            option(value="non_trivial") Non-Trivial
+          select.form-control#get-crossover-operator
+            option(selected=true, disabled) Crossover Operator
+            option(value="single_point") Single Point
+          select.form-control#get-mutation-operator
+            option(selected=true, disabled) Mutation Operator
+            option(value="random") Random
           input.form-control#get-generations(placeholder="Generations", value="500")
           input.form-control#get-population-size(placeholder="Population Size", value="100")
           input.form-control#get-crossover-rate(placeholder="Crossover Rate", value="0.95")
           input.form-control#get-mutation-rate(placeholder="Mutation Rate", value="0.05")
+          input.form-control#get-centers(placeholder="Number of Centers")
           input.form-control#get-capacity(placeholder="Center Node Capacity")
           a.btn.btn-default#start-evolve Evolve
           img.loading(src="ajax-loader.gif")

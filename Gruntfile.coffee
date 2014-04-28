@@ -17,6 +17,7 @@ module.exports = (grunt) ->
           './compiled/display.js': 'assets/js/display.coffee'
           './compiled/visualize.js': 'assets/js/visualize.coffee'
           './compiled/ga.js': './src/ga.coffee'
+          './compiled/run_ga.js': './src/run_ga.coffee'
           './compiled/gendata.js': './src/gendata.coffee'
           './compiled/helpers.js': './src/helpers.coffee'
       all:
