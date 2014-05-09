@@ -1,51 +1,5 @@
 helpers = require './helpers'
-class Chromosome
-  @generate: (num, centers) ->
-    array = Array.apply(null, Array(num)).map(Number.prototype.valueOf, 0)
-    for i in [0..centers-1]
-      rand = helpers.get_random_int(0, num-1)
-      while array[rand] == 1
-        rand = helpers.get_random_int(0, num-1)
-      array[rand] = 1
-    array.join("")
-
-  # Given a chromosome, return which indices are center locations.
-  @get_centers: (chromosome) ->
-    chromosome.split("").map(
-      (node, idx) ->
-        if parseInt(node) == 1 then idx else null
-      ).filter(
-      (obj) ->
-        obj != null
-      )
-
-  # Given a chromosome, return which indices are non-center locations.
-  @get_noncenters: (chromosome) ->
-    chromosome.split("").map(
-      (node, idx) ->
-        if parseInt(node) == 0 then idx else null
-      ).filter(
-      (obj) ->
-        obj != null
-      )
-
-  @check_feasibility: (chromosome, centers) ->
-    total = chromosome.split("").reduce(
-      ((total, next) -> total + parseInt(next)), 0
-    )
-    if total == centers
-      true
-    else
-      false
-
-  @get_max_distance_with_index: (array) ->
-    best = 0
-    best_idx = 0
-    for distance, idx in array
-      if distance > best
-        best = distance
-        best_idx = idx
-    [best, best_idx]
+Chromosome = require './chromosome'
 
 # Attributes for execution
 # - data: A multi-dimensional array that contains the nodes
@@ -56,10 +10,43 @@ class Chromosome
 # - capacity: The node capacity of a center
 # - loops: The number of iterations to go through before decreasing/increasing alpha/beta
 # - time: The time to execute the algorithm
-class SimulatedAnnealing
+class SA
   constructor: (opts) ->
     helpers.extend @, opts
     @nodes = @data.length
+
+  @perturb: (chromosome) ->
+    split_chromosome = chromosome.split("").map (val) -> parseInt val
+    centers = Chromosome.get_centers chromosome
+
+    rand = helpers.get_random_int(0, centers.length-1)
+    loc = helpers.get_random_int(0, split_chromosome.length-1)
+
+    index = centers[rand]
+
+    # console.log "centers: " + centers
+    # console.log "loc: " + loc
+    # console.log "index: " + index
+    # console.log ""
+
+    split_chromosome.splice index, 1
+    split_chromosome.splice loc, 0, 1
+    split_chromosome.join("")
+
+  @pairwise_switch: (chromosome) ->
+    split_chromosome = chromosome.split("").map (val) -> parseInt val
+    centers = Chromosome.get_centers chromosome
+
+    loc1 = helpers.get_random_int(0, split_chromosome.length-1)
+    loc2 = helpers.get_random_int(0, split_chromosome.length-1)
+
+    val1 = split_chromosome[loc1]
+    val2 = split_chromosome[loc2]
+
+    split_chromosome[loc1] = val2
+    split_chromosome[loc2] = val1
+
+    split_chromosome.join("")
 
   # Calculate distance between two nodes given (x,y) pairs
   distance: (src, tgt) ->
@@ -111,31 +98,22 @@ class SimulatedAnnealing
 
     @get_distance_sum(edges_per_center)
 
-  perturb: (chromosome) ->
-    split_chromosome = chromosome.split("").map (val) -> parseInt val
-    centers = Chromosome.get_centers chromosome
-
-    rand = helpers.get_random_int(0, centers.length-1)
-    loc = helpers.get_random_int(0, chromosome.length-1)
-
-    index = centers[rand]
-    value = split_chromosome[index]
-
-    split_chromosome.splice index, 1
-    split_chromosome.splice loc, 0, value
-    split_chromosome.join("")
-
   run: ->
     sol = Chromosome.generate @nodes, @centers
     start_time = Date.now()
     while (Date.now() - start_time)/1000 < @time
       for i in [1..@loops]
-        new_s = @perturb sol
+        new_s = @perturber sol
         new_fit = @fitness new_s
         old_fit = @fitness sol
 
-        if new_fit < old_fit || Math.random() < (Math.E**((old_fit-new_fit)/@temperature))
-          sol = new_s
+        if @foolish
+          if new_fit < old_fit
+            sol = new_s
+
+        else
+          if new_fit < old_fit || Math.random() < (Math.E**((old_fit-new_fit)/@temperature))
+            sol = new_s
 
       @temperature *= @alpha
       @loops *= @beta
@@ -145,4 +123,4 @@ class SimulatedAnnealing
     node_list = @get_node_list centers, noncenters
     {solution: [sol, @fitness sol], lines: @get_lines centers, node_list}
 
-module.exports = SimulatedAnnealing
+module.exports = SA

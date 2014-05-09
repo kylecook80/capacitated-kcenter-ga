@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"stringify",
+				"stringify_json"
+			],
+			[
+				"split",
+				"split_chromosome"
+			],
+			[
 				"expand",
 				"expand_line_object"
 			],
@@ -340,10 +348,18 @@
 	"buffers":
 	[
 		{
-			"file": "views/display.jade",
+			"file": "Gruntfile.coffee",
 			"settings":
 			{
-				"buffer_size": 2314,
+				"buffer_size": 1121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.coffee",
+			"settings":
+			{
+				"buffer_size": 6763,
 				"line_ending": "Unix"
 			}
 		},
@@ -351,20 +367,28 @@
 			"file": "src/ga.coffee",
 			"settings":
 			{
-				"buffer_size": 8999,
+				"buffer_size": 8594,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gruntfile.coffee",
+			"file": "src/sa.coffee",
 			"settings":
 			{
-				"buffer_size": 1409,
+				"buffer_size": 3864,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/js/visualize.coffee",
+			"file": "src/chromosome.coffee",
+			"settings":
+			{
+				"buffer_size": 1603,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/graph.coffee",
 			"settings":
 			{
 				"buffer_size": 1410,
@@ -372,10 +396,18 @@
 			}
 		},
 		{
-			"file": "assets/js/display.coffee",
+			"file": "src/helpers.coffee",
 			"settings":
 			{
-				"buffer_size": 4088,
+				"buffer_size": 559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/small.json",
+			"settings":
+			{
+				"buffer_size": 922,
 				"line_ending": "Unix"
 			}
 		}
@@ -386,6 +418,10 @@
 		"height": 71.0,
 		"selected_items":
 		[
+			[
+				"coffeescript",
+				"Set Syntax: CoffeeScript"
+			],
 			[
 				"stylus",
 				"Set Syntax: Stylus"
@@ -409,10 +445,6 @@
 			[
 				"package",
 				"Package Control: List Packages"
-			],
-			[
-				"coffeescript",
-				"Coffee: Display JavaScript"
 			],
 			[
 				"pause",
@@ -608,17 +640,25 @@
 	},
 	"file_history":
 	[
-		"/Users/kyle/dev/ga/src/run_ga.coffee",
+		"/Users/kyle/dev/ga/src/gendata.coffee",
+		"/Users/kyle/dev/ga/compiled/gendata.js",
+		"/Users/kyle/dev/ga/file.html",
 		"/Users/kyle/dev/ga/src/helpers.coffee",
+		"/Users/kyle/dev/ga/data/trivial.json",
+		"/Users/kyle/dev/ga/compiled/index.html",
+		"/Users/kyle/dev/ga/src/capacitated_k_center.coffee",
+		"/Users/kyle/dev/ga/package.json",
+		"/Users/kyle/dev/ga/data/non-trivial.json",
+		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/kyle/dev/ga/src/run_ga.coffee",
+		"/Users/kyle/dev/ga/assets/js/display.coffee",
+		"/Users/kyle/dev/ga/assets/js/visualize.coffee",
+		"/Users/kyle/dev/ga/Gruntfile.coffee",
+		"/Users/kyle/dev/ga/src/ga.coffee",
+		"/Users/kyle/dev/ga/views/display.jade",
 		"/Users/kyle/dev/ga/boot.js",
 		"/Users/kyle/dev/ga/src/sa.coffee",
-		"/Users/kyle/dev/ga/src/ga.coffee",
-		"/Users/kyle/dev/ga/src/capacitated_k_center.coffee",
-		"/Users/kyle/dev/ga/views/display.jade",
-		"/Users/kyle/dev/ga/package.json",
 		"/Users/kyle/dev/ga/assets/css/index.styl",
-		"/Users/kyle/dev/ga/Gruntfile.coffee",
-		"/Users/kyle/dev/ga/src/gendata.coffee",
 		"/Users/kyle/dev/ga/assets/js/helpers.js.coffee",
 		"/Users/kyle/dev/ga/assets/js/gendata.js.coffee",
 		"/Users/kyle/dev/ga/assets/js/ga.js.coffee",
@@ -626,9 +666,7 @@
 		"/Users/kyle/dev/ga/assets/js/visualize.js.coffee",
 		"/Users/kyle/dev/ga/assets/js/index.js.coffee",
 		"/Users/kyle/dev/ga/assets/css/index.css.styl",
-		"/Users/kyle/dev/ga/data/trivial.json",
 		"/Users/kyle/dev/ga/views/index.js.coffee",
-		"/Users/kyle/dev/ga/data/non-trivial.json",
 		"/Users/kyle/dev/ga/src/gendata.js",
 		"/Users/kyle/dev/ga/src/visualization/visualize.coffee",
 		"/Users/kyle/dev/ga/src/visualization/display.jade",
@@ -647,7 +685,6 @@
 		"/Users/kyle/dev/ga/gendata.coffee",
 		"/Applications/Sublime Text 2.app/Contents/Info.plist",
 		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
-		"/Users/kyle/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/kyle/dev/ga/ga.sublime-project",
 		"/Users/kyle/dev/revenue_accounting/app/views/formulas/_variables.html.haml",
 		"/Users/kyle/dev/revenue_accounting/app/views/meters/_allocations.html.haml",
@@ -730,12 +767,7 @@
 		"/Users/kyle/dev/revenue_accounting/app/controllers/products_controller.rb",
 		"/Users/kyle/dev/revenue_accounting/app/views/components_order/index.html.haml",
 		"/Users/kyle/dev/revenue_accounting/app/models/product.rb",
-		"/Users/kyle/dev/revenue_accounting/config/initializers/inflections.rb",
-		"/Users/kyle/dev/revenue_accounting/app/controllers/rates_controller.rb",
-		"/Users/kyle/dev/revenue_accounting/app/views/products/index.html.haml",
-		"/Users/kyle/dev/revenue_accounting/app/controllers/code_tables_controller.rb",
-		"/Users/kyle/dev/revenue_accounting/config/deploy.rb",
-		"/Users/kyle/dev/revenue_accounting/app/assets/javascripts/update_tables.js.coffee"
+		"/Users/kyle/dev/revenue_accounting/config/initializers/inflections.rb"
 	],
 	"find":
 	{
@@ -803,6 +835,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console.log",
+			"options",
+			">",
+			"<",
+			"]",
+			"[",
+			"expand",
+			"~",
 			"console.log",
 			"capacity",
 			"chromosome",
@@ -922,15 +962,7 @@
 			"clear",
 			"render_table",
 			"display_picker",
-			"def effective",
-			"graph",
-			"- @below = html.render",
-			"Searching",
-			"- @below = render",
-			"helpful_serialize",
-			"collect_table_params",
-			"check_duplicate",
-			"find_by_number_or_name"
+			"def effective"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -955,18 +987,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "views/display.jade",
+					"file": "Gruntfile.coffee",
 					"settings":
 					{
-						"buffer_size": 2314,
+						"buffer_size": 1121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								941,
-								941
+								473,
+								473
 							]
 						],
 						"settings":
@@ -974,61 +1006,57 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 186.0,
+						"translation.y": 26.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/ga.coffee",
+					"file": "src/main.coffee",
 					"settings":
 					{
-						"buffer_size": 8999,
+						"buffer_size": 6763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5287,
-								5287
+								3227,
+								3227
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2950.0,
+						"translation.y": 1027.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Gruntfile.coffee",
+					"file": "src/ga.coffee",
 					"settings":
 					{
-						"buffer_size": 1409,
+						"buffer_size": 8594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								594,
-								594
+								2235,
+								2235
 							]
 						],
 						"settings":
@@ -1041,14 +1069,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 14.0,
+						"translation.y": 2726.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "assets/js/visualize.coffee",
+					"file": "src/sa.coffee",
+					"settings":
+					{
+						"buffer_size": 3864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1644.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/chromosome.coffee",
+					"settings":
+					{
+						"buffer_size": 1603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								625,
+								625
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 282.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/graph.coffee",
 					"settings":
 					{
 						"buffer_size": 1410,
@@ -1058,8 +1146,8 @@
 						"selection":
 						[
 							[
-								1239,
-								1239
+								341,
+								341
 							]
 						],
 						"settings":
@@ -1078,19 +1166,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "assets/js/display.coffee",
+					"buffer": 6,
+					"file": "src/helpers.coffee",
 					"settings":
 					{
-						"buffer_size": 4088,
+						"buffer_size": 559,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3266,
-								3266
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1098,12 +1186,39 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 560.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "data/small.json",
+					"settings":
+					{
+						"buffer_size": 922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

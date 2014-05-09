@@ -6,18 +6,16 @@ module.exports = (grunt) ->
         files: [
           '**/*.coffee'
           '**/*.jade'
-          '**/*.styl'
         ]
-        tasks: ['coffee:compile', 'jade:compile', 'stylus:compile']
+        tasks: ['coffee:compile', 'jade:compile']
         options:
           spawn: false
     coffee:
       compile:
         files:
-          './compiled/display.js': 'assets/js/display.coffee'
-          './compiled/visualize.js': 'assets/js/visualize.coffee'
           './compiled/ga.js': './src/ga.coffee'
-          './compiled/run_ga.js': './src/run_ga.coffee'
+          './compiled/sa.js': './src/sa.coffee'
+          './compiled/graph.js': './src/graph.coffee'
           './compiled/gendata.js': './src/gendata.coffee'
           './compiled/helpers.js': './src/helpers.coffee'
       all:
@@ -30,20 +28,14 @@ module.exports = (grunt) ->
     jade:
       compile:
         options:
-          pretty: true
+          pretty: false
           data:
             debug: false
         files:
-          './compiled/index.html': './views/display.jade'
-    stylus:
-      compile:
-        files:
-          './compiled/index.css': './assets/css/index.styl'
-
+          './compiled/index.html': './src/display.jade'
 
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
-  grunt.loadNpmTasks 'grunt-contrib-stylus'
 
-  grunt.registerTask 'default', ['coffee:compile', 'jade:compile', 'stylus:compile']
+  grunt.registerTask 'default', ['coffee:compile', 'jade:compile']

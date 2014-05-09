@@ -3,6 +3,8 @@
 
   helpers = require('./helpers');
 
+  Chromosome = require('./chromosome');
+
   Population = (function() {
     function Population(opts) {
       var array, chromosome, outer_counter;
@@ -40,73 +42,6 @@
 
   })();
 
-  Chromosome = (function() {
-    function Chromosome() {}
-
-    Chromosome.generate = function(num, centers) {
-      var array, i, rand, _i, _ref;
-      array = Array.apply(null, Array(num)).map(Number.prototype.valueOf, 0);
-      for (i = _i = 0, _ref = centers - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
-        rand = helpers.get_random_int(0, num - 1);
-        array[rand] = 1;
-      }
-      return array.join("");
-    };
-
-    Chromosome.get_centers = function(chromosome) {
-      return chromosome.split("").map(function(node, idx) {
-        if (parseInt(node) === 1) {
-          return idx;
-        } else {
-          return null;
-        }
-      }).filter(function(obj) {
-        return obj !== null;
-      });
-    };
-
-    Chromosome.get_noncenters = function(chromosome) {
-      return chromosome.split("").map(function(node, idx) {
-        if (parseInt(node) === 0) {
-          return idx;
-        } else {
-          return null;
-        }
-      }).filter(function(obj) {
-        return obj !== null;
-      });
-    };
-
-    Chromosome.check_feasibility = function(chromosome, centers) {
-      var total;
-      total = chromosome.split("").reduce((function(total, next) {
-        return total + parseInt(next);
-      }), 0);
-      if (total === centers) {
-        return true;
-      } else {
-        return false;
-      }
-    };
-
-    Chromosome.get_max_distance_with_index = function(array) {
-      var best, best_idx, distance, idx, _i, _len;
-      best = 0;
-      best_idx = 0;
-      for (idx = _i = 0, _len = array.length; _i < _len; idx = ++_i) {
-        distance = array[idx];
-        if (distance > best) {
-          best = distance;
-          best_idx = idx;
-        }
-      }
-      return [best, best_idx];
-    };
-
-    return Chromosome;
-
-  })();
-
   GA = (function() {
     function GA(opts) {
       helpers.extend(this, opts);
@@ -117,6 +52,68 @@
         centers: this.centers
       });
     }
+
+    GA.cross = function(chromosomes) {
+      var first, first_slice1, first_slice2, rand, second, second_slice1, second_slice2;
+      first = chromosomes[0], second = chromosomes[1];
+      rand = helpers.get_random_int(1, first.length - 1);
+      first_slice1 = first.slice(0, rand);
+      first_slice2 = first.slice(rand, first.length);
+      second_slice1 = second.slice(0, rand);
+      second_slice2 = second.slice(rand, second.length);
+      first = first_slice1.concat(second_slice2);
+      second = second_slice1.concat(first_slice2);
+      return [first, second];
+    };
+
+    GA.uniform_cross = function(chromosomes) {
+      var child, i, invert_child, mask, split_mask;
+      mask = Chromosome.generate_bit_string(chromosomes[1].length);
+      split_mask = mask.split("");
+      child = (function() {
+        var _i, _ref, _results;
+        _results = [];
+        for (i = _i = 0, _ref = mask.length - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+          if (mask[i] === 0) {
+            _results.push(chromosomes[0][i]);
+          } else {
+            _results.push(chromosomes[1][i]);
+          }
+        }
+        return _results;
+      })();
+      child = child.join("");
+      invert_child = Chromosome.invert_chromosome(child);
+      return [child, invert_child];
+    };
+
+    GA.mutate = function(chromosome) {
+      var new_chromosome, rand;
+      rand = helpers.get_random_int(0, chromosome.length - 1);
+      new_chromosome = chromosome.split("").map(function(val) {
+        return parseInt(val);
+      });
+      if (new_chromosome[rand] === 0) {
+        new_chromosome[rand] = 1;
+      } else {
+        new_chromosome[rand] = 0;
+      }
+      return new_chromosome.join("");
+    };
+
+    GA.bit_switch = function(chromosome) {
+      var loc1, loc2, split_chromosome, val1, val2;
+      split_chromosome = chromosome.split("").map(function(val) {
+        return parseInt(val);
+      });
+      loc1 = helpers.get_random_int(0, chromosome.length - 1);
+      loc2 = helpers.get_random_int(0, chromosome.length - 1);
+      val1 = split_chromosome[loc1];
+      val2 = split_chromosome[loc2];
+      split_chromosome[loc1] = val2;
+      split_chromosome[loc2] = val1;
+      return split_chromosome.join("");
+    };
 
     GA.prototype.distance = function(src, tgt) {
       var src_x, src_y, tgt_x, tgt_y, _ref, _ref1;
@@ -253,35 +250,6 @@
       return selected;
     };
 
-    GA.prototype.cross = function(chromosomes) {
-      var first, first_slice1, first_slice2, rand, second, second_slice1, second_slice2;
-      first = chromosomes[0], second = chromosomes[1];
-      rand = helpers.get_random_int(1, first.length - 1);
-      first_slice1 = first.slice(0, rand);
-      first_slice2 = first.slice(rand, first.length);
-      second_slice1 = second.slice(0, rand);
-      second_slice2 = second.slice(rand, second.length);
-      first = first_slice1.concat(second_slice2);
-      second = second_slice1.concat(first_slice2);
-      return [first, second];
-    };
-
-    GA.prototype.uniform_cross = function(chromosomes) {};
-
-    GA.prototype.mutate = function(chromosome) {
-      var new_chromosome, rand;
-      rand = helpers.get_random_int(0, chromosome.length - 1);
-      new_chromosome = chromosome.split("").map(function(val) {
-        return parseInt(val);
-      });
-      if (new_chromosome[rand] === 0) {
-        new_chromosome[rand] = 1;
-      } else {
-        new_chromosome[rand] = 0;
-      }
-      return new_chromosome.join("");
-    };
-
     GA.prototype.repair = function(chromosome) {
       var centers, chromosome_new, diff, i, noncenters, rand, total, _i, _j, _ref, _ref1;
       centers = Chromosome.get_centers(chromosome);
@@ -325,14 +293,14 @@
             return _results;
           })();
           if (Math.random() < this.crossover) {
-            crossed = this.cross(non_biased_chromosomes);
+            crossed = this.crosser(non_biased_chromosomes);
             crossed.forEach(function(val) {
               return child_pool.push(val);
             });
           }
           if (Math.random() < this.mutation) {
             random_int = helpers.get_random_int(0, 1);
-            child_pool[non_biased_chromosomes[random_int]] = this.mutate(non_biased_chromosomes[random_int]);
+            child_pool[non_biased_chromosomes[random_int]] = this.mutator(non_biased_chromosomes[random_int]);
           }
         }
         child_pool.forEach((function(_this) {

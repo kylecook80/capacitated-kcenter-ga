@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evolutionary Computation Project</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="visualize" class="row">
+      <div id="container" class="col-md-12"></div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+    <script src="compiled/graph.js"></script>
+    <script>
+      $(document).ready(function() {
+        var nodes = [[50,50],[55,59],[35,55],[43,42],[53,45],[63,49],[54,60],[49,53],[46,63],[53,52],[50,100],[36,115],[45,89],[58,90],[65,108],[36,95],[45,110],[42,113],[40,94],[44,115],[50,150],[38,155],[36,153],[46,140],[48,140],[58,165],[45,138],[51,161],[41,158],[62,156],[100,50],[99,58],[95,48],[106,39],[103,41],[96,47],[111,52],[110,63],[97,65],[96,40],[100,100],[110,90],[99,100],[101,95],[102,87],[105,110],[110,114],[112,86],[103,99],[91,113],[100,150],[102,141],[89,138],[110,165],[88,145],[113,155],[93,143],[86,142],[111,163],[113,158],[150,50],[139,59],[158,61],[148,46],[154,59],[157,45],[140,53],[145,43],[151,59],[144,55],[150,100],[142,113],[138,104],[137,103],[154,92],[146,92],[148,100],[150,90],[160,92],[145,97],[150,150],[140,153],[141,153],[145,137],[146,140],[161,157],[150,147],[152,151],[158,145],[137,148]];
+        var modulus = 10;
+        var lines = {"7":[0,1,2,3,4,5,6,8,9],"16":[10,11,12,13,14,15,17,18,19],"20":[21,22,23,24,25,26,27,28,29,52,54,56,57],"30":[31,32,33,34,35,36,37,38,39],"48":[40,41,42,43,44,45,46,47,49],"60":[61,62,63,64,65,66,67,68,69],"76":[70,71,72,73,74,75,77,78,79],"81":[50,51,53,55,58,59,80,82,83,84,85,86,87,88,89]};
+        window.generate_graph(nodes, modulus, lines);
+      });
+    </script>
+  </body>
+</html>

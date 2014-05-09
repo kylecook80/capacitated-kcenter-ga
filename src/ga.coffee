@@ -1,4 +1,5 @@
 helpers = require './helpers'
+Chromosome = require './chromosome'
 
 # Arguments when instantiating:
 # - size: The size of the population.
@@ -32,52 +33,6 @@ class Population
   get_pop: ->
     @population
 
-class Chromosome
-  @generate: (num, centers) ->
-    array = Array.apply(null, Array(num)).map(Number.prototype.valueOf, 0)
-    for i in [0..centers-1]
-      rand = helpers.get_random_int(0, num-1)
-      array[rand] = 1
-    array.join("")
-
-  # Given a chromosome, return which indices are center locations.
-  @get_centers: (chromosome) ->
-    chromosome.split("").map(
-      (node, idx) ->
-        if parseInt(node) == 1 then idx else null
-      ).filter(
-      (obj) ->
-        obj != null
-      )
-
-  # Given a chromosome, return which indices are non-center locations.
-  @get_noncenters: (chromosome) ->
-    chromosome.split("").map(
-      (node, idx) ->
-        if parseInt(node) == 0 then idx else null
-      ).filter(
-      (obj) ->
-        obj != null
-      )
-
-  @check_feasibility: (chromosome, centers) ->
-    total = chromosome.split("").reduce(
-      ((total, next) -> total + parseInt(next)), 0
-    )
-    if total == centers
-      true
-    else
-      false
-
-  @get_max_distance_with_index: (array) ->
-    best = 0
-    best_idx = 0
-    for distance, idx in array
-      if distance > best
-        best = distance
-        best_idx = idx
-    [best, best_idx]
-
 # Arguments required for instantiating:
 # - data: A two dimensional array of (x,y) coordinates, i.e. [[1,1],[2,2],[3,3]...]
 # - population_size: The size of the population we want to use.
@@ -94,6 +49,62 @@ class GA
       size: @population_size
       nodes: @nodes
       centers: @centers
+
+  # Single point
+  @cross: (chromosomes) ->
+    [first, second] = chromosomes
+    rand = helpers.get_random_int(1, first.length-1)
+
+    first_slice1 = first.slice(0, rand)
+    first_slice2 = first.slice(rand, first.length)
+    second_slice1 = second.slice(0, rand)
+    second_slice2 = second.slice(rand, second.length)
+    
+    first = first_slice1.concat second_slice2
+    second = second_slice1.concat first_slice2
+    
+    [first, second]
+
+  @uniform_cross: (chromosomes) ->
+    mask = Chromosome.generate_bit_string(chromosomes[1].length)
+    split_mask = mask.split("")
+
+    child = for i in [0..mask.length-1]
+      if mask[i] == 0
+        chromosomes[0][i]
+      else
+        chromosomes[1][i]
+
+    child = child.join("")
+    invert_child = Chromosome.invert_chromosome child
+
+    [child, invert_child]
+
+  # Flip bit
+  @mutate: (chromosome) ->
+    rand = helpers.get_random_int(0, chromosome.length-1)
+    new_chromosome = chromosome.split("").map (val) -> parseInt(val)
+
+    if new_chromosome[rand] == 0
+      new_chromosome[rand] = 1
+    else
+      new_chromosome[rand] = 0
+
+    new_chromosome.join("")
+
+  @bit_switch: (chromosome) ->
+    split_chromosome = chromosome.split("").map (val) -> parseInt(val)
+
+    loc1 = helpers.get_random_int(0, chromosome.length-1)
+    loc2 = helpers.get_random_int(0, chromosome.length-1)
+
+    val1 = split_chromosome[loc1]
+    val2 = split_chromosome[loc2]
+
+    split_chromosome[loc1] = val2
+    split_chromosome[loc2] = val1
+
+    split_chromosome.join("")
 
   # Calculate distance between two nodes given (x,y) pairs
   distance: (src, tgt) ->
@@ -127,7 +138,7 @@ class GA
           edges_per_center[candidate[1]].push candidate[0]
           used.push candidate[0]
         else
-          continue  
+          continue
 
     edges_per_center
 
@@ -174,35 +185,6 @@ class GA
           selected.push first
     selected
 
-  # Single point
-  cross: (chromosomes) ->
-    [first, second] = chromosomes
-    rand = helpers.get_random_int(1, first.length-1)
-
-    first_slice1 = first.slice(0, rand)
-    first_slice2 = first.slice(rand, first.length)
-    second_slice1 = second.slice(0, rand)
-    second_slice2 = second.slice(rand, second.length)
-    
-    first = first_slice1.concat second_slice2
-    second = second_slice1.concat first_slice2
-    
-    [first, second]
-
-  uniform_cross: (chromosomes) ->
-
-  # Flip bit
-  mutate: (chromosome) ->
-    rand = helpers.get_random_int(0, chromosome.length-1)
-    new_chromosome = chromosome.split("").map (val) -> parseInt(val)
-
-    if new_chromosome[rand] == 0
-      new_chromosome[rand] = 1
-    else
-      new_chromosome[rand] = 0
-
-    new_chromosome.join("")
-
   # TODO: sometimes a '1' is randomly selected and the chromosome is not repaired.
   repair: (chromosome) ->
     centers = Chromosome.get_centers(chromosome)
@@ -240,13 +222,13 @@ class GA
           population[random_int]
 
         if Math.random() < @crossover
-          crossed = @cross non_biased_chromosomes
+          crossed = @crosser non_biased_chromosomes
           crossed.forEach (val) -> child_pool.push(val)
 
         if Math.random() < @mutation
           random_int = helpers.get_random_int(0, 1)
           child_pool[non_biased_chromosomes[random_int]] =
-            @mutate non_biased_chromosomes[random_int]
+            @mutator non_biased_chromosomes[random_int]
 
       child_pool.forEach (chromosome, idx) =>
         if !Chromosome.check_feasibility chromosome, @centers
